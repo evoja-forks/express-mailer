@@ -26,8 +26,10 @@ var config = {
   test: {
     mailer: {
       from: 'TestApplication@localhost',
+      name: 'localhost',
       host: 'localhost', // hostname
-      secureConnection: true, // use SSL
+      secure: true, // use SSL
+      tls: {rejectUnauthorized: false},
       port: 8465, // test port for secure SMTP
       auth: {
         user: 'TestApplication',
@@ -36,8 +38,10 @@ var config = {
     },
     mailerUpdate: {
       from: 'UpdatedTestApplication@localhost',
+      name: 'localhost',
       host: 'localhost',
-      secureConnection: true,
+      secure: true,
+      tls: {rejectUnauthorized: false},
       port: 8465,
       auth: {
         user: 'TestApplication',

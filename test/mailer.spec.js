@@ -63,7 +63,7 @@ describe('Mailer', function () {
           if (err) {
             return done(err);
           };
-          res.text.should.include('Subject: Test Email');
+          res.text.should.include('<title>Test Email</title>');
           done();
         });
     });

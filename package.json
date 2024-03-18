@@ -19,20 +19,20 @@
   },
   "main": "index",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">= 14.21.3"
   },
   "dependencies": {
-    "nodemailer": "^0.7.1"
+    "nodemailer": "6.9.12"
   },
   "devDependencies": {
     "express": "^3.20.2",
     "jade": "^0.27.7",
-    "mocha": "^1.5.0",
+    "mocha": "10.3.0",
     "superagent": "^0.9.10",
     "should": "^1.2.2",
     "sinon": "^1.4.2",
     "rewire": "^1.0.4",
-    "test-mailbox": "^0.0.6"
+    "test-mailbox": "npm:@evoja-forks/test-mailbox@0.1.0"
   },
   "scripts" : {
     "test" : "make test",
